@@ -1,0 +1,39 @@
+{% extends 'users/userbase.html'%}
+{%load static%}
+{%block contents%}
+
+<section class="we-do">
+    <div class="container">
+        <div class="we-do-details">
+            <div class="section-header text-center">
+                <h2>NIST Test File</h2>
+                <p>
+                    <center>
+                <form action="{%url 'NISTTest'%}" enctype="multipart/form-data" method="POST" align="center">
+                    {%csrf_token%}
+                    <table>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <strong>Select an Text File:</strong> <input type="file" name="file" accept=".txt"
+                                                                             required
+                                                                             placeholder="Select an Text to Upload"><br/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+
+                        </div>
+
+                        <button class="btn  btn-primary text-white py-6 px-6" type="submit"> Upload</button>
+
+                    </table>
+                </form>
+                </center>
+                </p>
+            </div><!--/.section-header-->
+            {{cipher}}
+        </div><!--/.we-do-details-->
+    </div><!--/.container-->
+</section><!--/.we-do-->
+
+
+{%endblock%}

@@ -1,0 +1,297 @@
+2024-09-15 18:03:45,806 - INFO - Security audit started.
+2024-09-15 18:03:45,860 - ERROR - Internal Server Error: /NISTTest/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 102, in NISTTest
+    result, prob = star_process(filename)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py", line 125, in star_process
+    main_security_pipeline(filepath)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py", line 74, in main_security_pipeline
+    file1 = open(filepath, "r+")
+FileNotFoundError: [Errno 2] No such file or directory: 'Req_FXFL4lo.txt'
+2024-09-15 18:04:30,129 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py changed, reloading.
+2024-09-15 18:05:29,659 - INFO - Security audit started.
+2024-09-15 19:34:19,288 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py changed, reloading.
+2024-09-15 19:34:21,565 - INFO - Security audit started.
+2024-09-16 09:30:20,596 - INFO - Security audit started.
+2024-09-16 09:30:20,776 - ERROR - Internal Server Error: /NISTTest/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 105, in NISTTest
+    UserFilesModel.objects.create(username=loginid, email=email, filename=filename,filepath=uploaded_file_url,
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 669, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 585, in __init__
+    raise TypeError(
+TypeError: UserFilesModel() got unexpected keyword arguments: 'filepath'
+2024-09-16 09:30:38,593 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 09:31:00,049 - INFO - Security audit started.
+2024-09-16 09:31:00,429 - ERROR - Internal Server Error: /NISTTest/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: uploadeddata.enckey
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 105, in NISTTest
+    UserFilesModel.objects.create(username=loginid, email=email, filename=filename,
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 831, in save
+    self.save_base(
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 882, in save_base
+    updated = self._save_table(
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 1025, in _save_table
+    results = self._do_insert(
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 1066, in _do_insert
+    return manager._insert(
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: uploadeddata.enckey
+2024-09-16 09:31:42,019 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py changed, reloading.
+2024-09-16 09:32:52,742 - INFO - Security audit started.
+2024-09-16 09:32:52,900 - ERROR - Internal Server Error: /NISTTest/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 102, in NISTTest
+    key, cipher = star_process(filename)
+ValueError: too many values to unpack (expected 2)
+2024-09-16 09:33:28,796 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py changed, reloading.
+2024-09-16 09:33:45,931 - INFO - Security audit started.
+2024-09-16 09:33:57,263 - INFO - Security audit started.
+2024-09-16 09:35:17,672 - INFO - D:\development2024workspace\CyberSecurityTraining\CyberSecurityTraining\urls.py changed, reloading.
+2024-09-16 09:39:40,078 - INFO - Security audit started.
+2024-09-16 09:39:40,356 - ERROR - Internal Server Error: /NISTTest/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 105, in NISTTest
+    UserFilesModel.objects.delete()
+AttributeError: 'Manager' object has no attribute 'delete'
+2024-09-16 09:39:55,609 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 09:40:19,158 - INFO - Security audit started.
+2024-09-16 09:40:26,041 - WARNING - Not Found: /download/
+2024-09-16 09:40:57,720 - INFO - Security audit started.
+2024-09-16 09:41:34,021 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py changed, reloading.
+2024-09-16 09:41:51,642 - INFO - Security audit started.
+2024-09-16 09:42:07,991 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 09:47:13,808 - INFO - Security audit started.
+2024-09-16 09:47:13,940 - ERROR - Internal Server Error: /NISTTest/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 102, in NISTTest
+    key, cipher = star_process(filename)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py", line 132, in star_process
+    return key, main_security_pipeline(filepath)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py", line 83, in main_security_pipeline
+    f.write(encrypted)
+TypeError: write() argument must be str, not bytes
+2024-09-16 09:48:32,622 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_samples.py changed, reloading.
+2024-09-16 09:48:43,252 - INFO - Security audit started.
+2024-09-16 09:48:59,849 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 10:45:57,399 - INFO - Security audit started.
+2024-09-16 10:46:02,048 - ERROR - Internal Server Error: /dataDecrypt/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\fernet.py", line 130, in _verify_signature
+    h.verify(data[-32:])
+cryptography.exceptions.InvalidSignature: Signature did not match digest.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 141, in dataDecrypt
+    decrypted = star_process(filename, key)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\decryptDatafiles.py", line 31, in star_process
+    return main_security_pipeline(filepath, key)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\decryptDatafiles.py", line 24, in main_security_pipeline
+    decrypted = decrypt_data(cipherData, key)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\decryptDatafiles.py", line 12, in decrypt_data
+    decrypted_data = fernet.decrypt(encrypted_data).decode()
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\fernet.py", line 89, in decrypt
+    return self._decrypt_data(data, timestamp, time_info)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\fernet.py", line 148, in _decrypt_data
+    self._verify_signature(data)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\fernet.py", line 132, in _verify_signature
+    raise InvalidToken
+cryptography.fernet.InvalidToken
+2024-09-16 10:46:52,003 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\decryptDatafiles.py changed, reloading.
+2024-09-16 10:55:38,596 - INFO - Security audit started.
+2024-09-16 10:55:42,799 - ERROR - Internal Server Error: /dataDecrypt/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 141, in dataDecrypt
+    decrypted = star_process(filename, encKey)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\decryptDatafiles.py", line 51, in star_process
+    return main_security_pipeline(filepath, key)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\decryptDatafiles.py", line 44, in main_security_pipeline
+    decrypted = decrypt_data(cipherData, key)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\decryptDatafiles.py", line 30, in decrypt_data
+    key = str_to_fernet_key(key.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2024-09-16 10:56:22,082 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 11:00:50,396 - INFO - Security audit started.
+2024-09-16 11:00:57,336 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 11:01:25,574 - INFO - Security audit started.
+2024-09-16 11:04:18,120 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 11:35:56,692 - INFO - Security audit started.
+2024-09-16 11:36:52,427 - ERROR - Internal Server Error: /reviewYourNIST/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 162, in reviewYourNIST
+    f2 = "/review/" + secondFile
+TypeError: can only concatenate str (not "InMemoryUploadedFile") to str
+2024-09-16 11:37:22,683 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 11:38:16,654 - INFO - Security audit started.
+2024-09-16 11:38:16,720 - ERROR - Internal Server Error: /reviewYourNIST/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\users\views.py", line 164, in reviewYourNIST
+    star_process(f1,f2)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_review.py", line 136, in star_process
+    return main_security_pipeline(f1,f2)
+  File "D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_review.py", line 77, in main_security_pipeline
+    file1 = open(path, "r+")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/review/SentimentAnalysis (1).txt'
+2024-09-16 11:42:41,620 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 11:42:56,219 - INFO - Security audit started.
+2024-09-16 11:42:56,232 - INFO - File test_file.txt integrity check failed! Possible tampering detected.
+2024-09-16 11:43:15,345 - INFO - D:\development2024workspace\CyberSecurityTraining\users\views.py changed, reloading.
+2024-09-16 11:45:09,189 - INFO - Security audit started.
+2024-09-16 11:45:09,196 - INFO - File D:\development2024workspace\CyberSecurityTraining\media\review\SentimentAnalysis (1)_MpSvkjZ.txt integrity check failed! Possible tampering detected.
+2024-09-16 11:47:56,359 - INFO - Security audit started.
+2024-09-16 11:47:56,479 - INFO - File D:\development2024workspace\CyberSecurityTraining\media\review\python_3_7_2 Packges Version.txt integrity check failed! Possible tampering detected.
+2024-09-16 11:48:26,359 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_review.py changed, reloading.
+2024-09-16 11:48:49,323 - INFO - Security audit started.
+2024-09-16 11:48:49,331 - INFO - File D:\development2024workspace\CyberSecurityTraining\media\review\SentimentAnalysis (1).txt passed integrity check.
+2024-09-16 11:50:44,852 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_review.py changed, reloading.
+2024-09-16 11:51:00,534 - INFO - Security audit started.
+2024-09-16 11:51:00,551 - INFO - File D:\development2024workspace\CyberSecurityTraining\media\review\SentimentAnalysis (2)_CtCJQP2.txt passed integrity check.
+2024-09-16 11:51:12,338 - INFO - Security audit started.
+2024-09-16 11:51:12,388 - INFO - File D:\development2024workspace\CyberSecurityTraining\media\review\SentimentAnalysis (1)_NiTLeZB.txt integrity check failed! Possible tampering detected.
+2024-09-16 11:51:34,687 - INFO - D:\development2024workspace\CyberSecurityTraining\users\utility\nistiso_review.py changed, reloading.
+2024-09-16 11:52:15,966 - INFO - Security audit started.
+2024-09-16 11:52:15,984 - INFO - File D:\development2024workspace\CyberSecurityTraining\media\review\SentimentAnalysis (1)_olSFBlj.txt passed integrity check.
+2024-09-16 11:53:02,291 - INFO - Security audit started.
+2024-09-16 11:53:02,344 - INFO - File D:\development2024workspace\CyberSecurityTraining\media\review\python_3_7_2 Packges Version (2).txt passed integrity check.
+2024-09-16 11:53:15,011 - ERROR - Internal Server Error: /AdminLoginCheck/
+Traceback (most recent call last):
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\development2024workspace\CyberSecurityTraining\admins\views.py", line 13, in AdminLoginCheck
+    return render(request, 'admins/AdminHome.html')
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\datapoint\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'AdminViewResults' not found. 'AdminViewResults' is not a valid view function or pattern name.
+2025-01-24 14:27:22,929 - INFO - Security audit started.
+2025-01-24 14:28:02,714 - INFO - Security audit started.
+2025-01-24 14:28:02,749 - INFO - File C:\Users\abith\Desktop\majorproject final\60. AI-DRIVEN CUSTOMIZED CYBER SECURITY TRAINING AND AWARENESS\CODE\CyberSecurityTraining\media\review\SentimentAnalysis (1)_dbXTCji.txt integrity check failed! Possible tampering detected.
+2025-01-24 14:28:20,441 - INFO - Security audit started.
+2025-01-24 14:28:20,457 - INFO - File C:\Users\abith\Desktop\majorproject final\60. AI-DRIVEN CUSTOMIZED CYBER SECURITY TRAINING AND AWARENESS\CODE\CyberSecurityTraining\media\review\SentimentAnalysis (1)_zYyTJes.txt integrity check failed! Possible tampering detected.
+2025-01-24 14:29:56,866 - INFO - Security audit started.
+2025-01-24 14:30:48,112 - INFO - Security audit started.
+2025-01-24 14:30:48,150 - INFO - File C:\Users\abith\Desktop\majorproject final\60. AI-DRIVEN CUSTOMIZED CYBER SECURITY TRAINING AND AWARENESS\CODE\CyberSecurityTraining\media\review\Killer Jeans.txt integrity check failed! Possible tampering detected.
+2025-02-03 10:28:29,899 - INFO - Security audit started.
+2025-02-03 10:29:06,147 - INFO - C:\Users\abith\Desktop\majorproject final\60. AI-DRIVEN CUSTOMIZED CYBER SECURITY TRAINING AND AWARENESS\CODE\CyberSecurityTraining\CyberSecurityTraining\settings.py changed, reloading.
+2025-02-03 10:49:37,829 - INFO - Security audit started.
+2025-02-03 10:54:34,555 - INFO - Security audit started.
+2025-02-03 11:01:55,019 - INFO - Security audit started.
+2025-02-03 11:02:55,719 - WARNING - Not Found: /favicon.ico
+2025-02-05 10:31:01,483 - INFO - Security audit started.
+2025-02-05 10:57:05,387 - INFO - Security audit started.
+2025-02-05 11:07:53,969 - INFO - Security audit started.
+2025-02-05 11:08:29,901 - WARNING - Not Found: /favicon.ico
+2025-02-07 12:03:23,199 - INFO - Security audit started.
+2025-02-07 13:54:09,803 - INFO - Security audit started.
+2025-03-28 10:54:20,304 - INFO - Security audit started.
+2025-03-28 11:17:53,061 - INFO - Security audit started.
+2025-03-28 11:18:06,206 - INFO - Security audit started.
+2025-04-21 13:47:46,365 - INFO - Security audit started.

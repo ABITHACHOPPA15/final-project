@@ -1,0 +1,63 @@
+{% extends 'users/userbase.html'%}
+{%load static%}
+{%block contents%}
+<!--<style>-->
+<!--    .bg-light{-->
+<!--    margin-top: -500px;-->
+<!--    background: #65cd00;-->
+<!--    padding:10px;-->
+<!--    }-->
+
+<!--</style>-->
+
+<section class="we-do">
+    <div class="container">
+        <div class="we-do-details">
+            <div class="section-header text-center">
+                <h2>User View Uploaded Files </h2>
+                <p>
+                    <center>
+                <h3 class="column-title">Description of Crypto Algorithm</h3>
+
+                <table class="table table-bordered">
+                    <thead>
+                    <tr class="table-danger">
+                        <th>S.No</th>
+                        <th>File Name</th>
+                        <th>Key</th>
+                        <th>Date</th>
+                        <th>View Cipher</th>
+                        <th>Cipher Download</th>
+                        <th>Decrypt</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for i in data %}
+                    <tr style="color: BLUE; ">
+                        <td>{{forloop.counter}}</td>
+                        <td>{{i.filename}}</td>
+                        <td>{{i.enckey}}</td>
+                        <td>{{i.cdate}}</td>
+                        <td><a class="btn-link" href="{{i.file.url }}" target="_blank">Download</a></td>
+                        <td><a class="btn-link" href="/download/?fileis={{i.filename }}" target="_blank">Download</a>
+                        </td>
+                         <td><a class="btn-link" href="/dataDecrypt/?id={{i.id }}" target="_blank">Decrypt</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+
+
+                </center>
+
+                </p>
+            </div><!--/.section-header-->
+
+        </div><!--/.we-do-details-->
+    </div><!--/.container-->
+</section><!--/.we-do-->
+
+
+{%endblock%}

@@ -1,0 +1,30 @@
+{% extends 'users/userbase.html'%}
+{%load static%}
+{%block contents%}
+<!--<style>-->
+<!--    .bg-light{-->
+<!--    margin-top: -500px;-->
+<!--    background: #65cd00;-->
+<!--    padding:10px;-->
+<!--    }-->
+
+<!--</style>-->
+
+ <section class="we-do">
+    <div class="container">
+        <div class="we-do-details">
+            <div class="section-header text-center">
+                <h2>User Home</h2><br>
+                Your Token: <br>
+                <label for="token">{{ request.session.token }}</label>
+                <p>
+                    For a Web user, the home page is the first Web page that is displayed after starting a Web browser like Netscape's Navigator or Microsoft's Internet Explorer. The browser is usually preset so that the home page is the first page of the browser manufacturer. However, you can set it to open to any Web site.
+                </p>
+            </div><!--/.section-header-->
+
+        </div><!--/.we-do-details-->
+    </div><!--/.container-->
+</section><!--/.we-do-->
+
+
+{%endblock%}
